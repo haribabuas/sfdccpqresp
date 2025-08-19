@@ -71,7 +71,7 @@ paths:
                     type: string
                     description: Error message when an unexpected error occurs
 servers:
-  - url: http://localhost:8080
+  - url: https://sfdccpq-cce3ffe89c28.herokuapp.com/
     description: Generated server url
 tags:
   - name: Pricing Engine
