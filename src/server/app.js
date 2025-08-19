@@ -57,3 +57,11 @@ try {
   console.error('Failed to start server:', err);
   process.exit(1);
 }
+
+app.get('/record/:id', async (req, res) => {
+  const recordId = req.params.id;
+  // Use Salesforce REST API or other logic to fetch record
+  const record = await getSalesforceRecord(recordId);
+  res.json(record);
+});
+
